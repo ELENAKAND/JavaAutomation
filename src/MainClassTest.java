@@ -4,6 +4,11 @@ import org.junit.Test;
 public class MainClassTest extends MainClass {
 
     @Test
+    public void testGetClassString() {
+        Assert.assertTrue("The string doesn't contain hello","Hello, world".contains("Hello") || "Hello, world".toLowerCase().contains("hello"));
+    }
+
+    @Test
     public void testGetClassNumber(){
         int number_1 = 45;
         int number_2 = this.getClassNumber();

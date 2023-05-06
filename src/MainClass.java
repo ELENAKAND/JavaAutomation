@@ -1,6 +1,12 @@
 import org.junit.Assert;
 
 public class MainClass {
+    private String class_string = "Hello, world";
+    public void getClassString () {
+        String s = class_string;
+        System.out.println(s);
+
+    }
     private int class_number = 20;
     public int getClassNumber(){
         int expected = 20;
