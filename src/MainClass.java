@@ -1,4 +1,13 @@
+import org.junit.Assert;
+
 public class MainClass {
+    private int class_number = 20;
+    public int getClassNumber(){
+        int expected = 20;
+        int actual = class_number;
+        Assert.assertTrue("Wrong result",actual==expected);
+        return actual;
+    }
     public int getLocalNumber(int a){
         if (a == 14){
             System.out.println("Correct number");
